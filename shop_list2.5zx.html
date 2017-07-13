@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>店铺详情装修中</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<script src="js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/shop_list.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="header">
+				<span><a href="shop_list2.5add.html"><img src="img/nav_btn_back.png" /></a></span>
+				<h1>杭州西湖四季三星级商务全国连锁</h1>
+			</header>
+			<section class="section">
+				<div class="top">
+					<div class="top_pic">
+						<img src="img/shop_list/shop_head.png" />
+						<!--<img src="img/shop_list/shophead.png" class="pic_rgba" />-->
+					</div>
+					<div class="top_txt">
+						<ul class="top_list">
+							<li class="top_li">
+						<img src="img/shop_list/biaoshi.png" />
+								
+							</li>
+							<li class="top_li">
+						<img src="img/shop_list/yellow.png" />
+								
+							</li>
+							<li class="top_li">
+						<img src="img/shop_list/yemaozi.png" />
+								
+							</li>
+						</ul>
+
+						
+						<p class="sp">商品 <span>22</span>种 | 起送 <span>¥0</span></p>
+					</div>
+					<div class="top_star top_star2">
+					</div>
+				</div>
+				<div class="nav">
+					<ul class="ul">
+						<li class="li active">
+							<a href="#">商品</a>
+						</li>
+						<li class="li">
+							<a href="#">详情</a>
+						</li>
+						<li class="li">
+							<a href="qwc_pj.html">评价</a>
+						</li>
+					</ul>
+				</div>
+				<div class="zx">
+					<div class="zx_pic">
+						<img src="img/shop_list/zhuangxiu.png"/>
+					</div>
+					<div class="zx_txt">
+						<a href="#">店铺正在装修,敬请期待</a>
+					</div>
+				</div>
+				
+			</section>
+
+			
+		<script src="js/jquery.js">
+		</script>
+		<script type="text/javascript">
+			$(".li").click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+			$(".list_li").click(function() {
+				$(this).addClass("selected").siblings().removeClass("selected");
+			})
+			$(".shop_hover").click(function() {
+				$(this).addClass("checked").siblings().removeClass("checked");
+			})
+		</script>
+	</body>
+
+</html>

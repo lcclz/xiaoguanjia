@@ -1,0 +1,165 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  width: 100%;
+  height: 0.88rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container header p {
+  margin-left: 0.3rem;
+}
+.container header p img {
+  width: 0.4rem;
+  height: auto;
+  background: non;
+}
+.container header h1 {
+  -webkit-box-flex: 1;
+  width: 3.04rem;
+  height: 0.5rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  background: url("../img/r_j.png") no-repeat;
+  background-size: 3.04rem;
+  margin-left: 1.04rem;
+  color: #fff;
+  font-size: 0.34rem;
+}
+.container header h1 img {
+  display: block;
+  width: 0.28rem;
+  height: 0.32rem;
+  background: none;
+  margin-left: 0.22rem;
+  margin-right: 0.1rem;
+}
+.container header a {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-right: 0.3rem;
+}
+.container header a .img {
+  display: block;
+  width: 0.38rem;
+  height: 0.36rem;
+  background: none;
+  margin-left: 0.3rem;
+  background: url("../img/myshop.png") no-repeat;
+  background-size: 0.38rem;
+}
+.container header a .wenzi {
+  display: block;
+  color: #ffffff;
+}
+.container footer {
+  width: 100%;
+  height: 0.98rem;
+  background: none;
+  border-top: 1px solid #e6e9eb;
+  box-shadow: 0 -0.07rem 0.1rem #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container footer .ul {
+  -webkit-box-flex: 1;
+  margin-left: 0.84rem;
+}
+.container footer .ul .li a {
+  display: block;
+  margin-top: 0.08rem;
+  color: #b9b9b9;
+}
+.container footer .ul .li .img1 {
+  margin-top: 0.18rem;
+  display: block;
+  background: url("../img/img1.png") no-repeat;
+  background-size: 20px 58px;
+}
+.container footer .ul .li .img1.home2 {
+  height: 18px;
+  width: 18px;
+  background-position: 0 0;
+}
+.container footer .ul .li .img1.home3 {
+  height: 20px;
+  width: 20px;
+  background-position: 0 -18px;
+}
+.container footer .ul .li .img1.Home {
+  height: 19px;
+  width: 20px;
+  background-position: 0 -38px;
+}
+.container footer .ul:first-child .li a {
+  color: #81b2f4;
+}
+.container section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  background: #ffffff;
+  overflow: auto;
+}
+.container section .banner img {
+  width: 100%;
+  height: 2.96rem;
+  background: none;
+}
+.container section .home {
+  width: 100%;
+  height: 4.07rem;
+  background: none;
+  margin-top: 0.18rem;
+}
+.container section .home .img1 {
+  margin: 0.5rem 1.7rem 0 2rem;
+  display: block;
+  width: 2.7rem;
+  height: 2.4rem;
+  background: none;
+  background: url("../img/qiu.png") no-repeat;
+  background-size: 2.7rem;
+}
+.container section .home .wz {
+  text-align: center;
+  display: block;
+  width: 3.94rem;
+  margin: 0.32rem 1.24rem 0 1.26rem;
+  font-size: 0.24rem;
+}
+.container section .home .wz a {
+  color: #acacac;
+}
+.container section .sq {
+  width: 100%;
+  height: 1.39rem;
+  background: #ffffff;
+}
+.container section .sq a {
+  display: block;
+  width: 53.4375%;
+  height: 0.8rem;
+  background: none;
+  border: 1px solid #4194f0;
+  color: #4194f0;
+  margin-left: 1.5rem;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.34rem;
+  border-radius: 0.36rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>请选择所在的学校</title>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						if(clientWidth >= 750) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+						}
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+				/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/small.css" />
+	</head>
+
+	<body>
+		<div class="s_container">
+			<header class="s_header">
+				<span><a href="city1.1.html"><img src="img/nav_btn_back.png"/></a></span>
+				<h1>请选择所在的学校</h1>
+			</header>
+			<section class="s_section">
+				<div class="top">
+				<a href="search_school1.3.html"><input type="text" name="" id="" value="搜索学校" class="input"/></a>
+					
+				</div>
+
+				<div class="bottom">
+					<ul>
+						<li>
+							<a href="#">鄂尔多斯大学</a><span><img src="img/checked.png"/></span></li>
+						<li>
+							<a href="#">峨眉山大学</a>
+						</li>
+						<li>
+							<a href="#">恩施大学</a>
+						</li>
+						<li>
+							<a href="#">鄂州大学</a>
+						</li>
+						<li>
+							<a href="#">抚顺大学</a>
+						</li>
+						<li>
+							<a href="#">阜阳大学</a>
+						</li>
+						<li>
+							<a href="#">鞍山大学</a>
+						</li>
+					</ul>
+					</dl>
+				</div>
+			</section>
+		</div>
+	</body>
+
+</html>

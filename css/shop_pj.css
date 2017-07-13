@@ -1,0 +1,257 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.header {
+  width: 100%;
+  height: 0.92rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.header span img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+  display: block;
+  margin-left: 0.28rem;
+}
+.header h1 {
+  -webkit-box-flex: 1;
+  font-size: 0.32rem;
+  margin-left: 0.4rem;
+  color: #feffff;
+  font-weight: normal;
+}
+.section {
+  -webkit-box-flex: 1;
+  background: #f2f5f7;
+  overflow: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.section .main::-webkit-scrollbar {
+  width: 0;
+}
+.section .top {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.24rem;
+  background: #4194f0;
+}
+.section .top .top_pic {
+  margin: auto 0.28rem auto 0.18rem;
+  position: relative;
+}
+.section .top .top_pic img {
+  width: 1.06rem;
+  height: auto;
+  background: none;
+}
+.section .top .top_pic .pic_rgba {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section .top .top_txt {
+  -webkit-box-flex: 1;
+}
+.section .top .top_txt .top_list {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.section .top .top_txt .top_list .top_li {
+  margin-right: 0.22rem;
+}
+.section .top .top_txt .top_list .top_li img {
+  width: 0.54rem;
+  height: auto;
+  background: none;
+  margin-top: 0.18rem;
+}
+.section .top .top_txt .sp {
+  color: #dae7fb;
+}
+.section .top .top_star {
+  width: 0.34rem;
+  height: 0.32rem;
+  background: none;
+  background: url("../img/shop_list/already.png") no-repeat;
+  background-size: 0.32rem;
+  margin-right: 0.18rem;
+}
+.section .top .top_star2 {
+  background: url("../img/shop_list/ready.png") no-repeat;
+  background-size: 0.32rem;
+  margin-right: 0.18rem;
+}
+.section .nav .ul {
+  width: 100%;
+  height: 0.66rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  -webkit-box-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+.section .nav .ul .li {
+  -webkit-box-flex: 1;
+  line-height: 0.64rem;
+  font-size: 0.28rem;
+}
+.section .nav .ul .li a {
+  color: #333333;
+}
+.section .nav .ul .li.active,
+.section .nav .ul .li:hover {
+  border-bottom: 2px solid #4194f0;
+}
+.section .nav .ul .li.active a,
+.section .nav .ul .li:hover a {
+  color: #4194f0;
+}
+.section .banner {
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 1.32rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-bottom: 0.2rem;
+}
+.section .banner .l {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  border-right: 1px solid #e6e9eb;
+  width: 2.38rem;
+  height: auto;
+  background: none;
+  margin: 0.1rem 0;
+}
+.section .banner .l .l_fen {
+  font-size: 0.28rem;
+}
+.section .banner .l .l_fen a {
+  color: #ffbd44;
+}
+.section .banner .l .l_per {
+  transform: scale(0.83333333);
+  transform-origin: center top;
+}
+.section .banner .l .l_per a {
+  color: #666666;
+}
+.section .banner .l .l_num {
+  transform: scale(0.83333333);
+  transform-origin: center top;
+}
+.section .banner .l .l_num a {
+  color: #b6b6b6;
+}
+.section .banner .r {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-left: ;
+  margin-left: 0.62rem ;
+}
+.section .banner .r .list {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 0.2rem;
+}
+.section .banner .r .list .list-txt {
+  font-size: 0.22rem;
+  color: #333333;
+}
+.section .banner .r .list .list-star {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin: 0.08rem 0.07rem auto 0.16rem ;
+}
+.section .banner .r .list .list-star .star1 {
+  display: block;
+  width: 0.19rem;
+  height: auto;
+  background: none;
+  margin-right: 0.04rem;
+  background: url(../img/shop_list/star1.png) no-repeat;
+  background-size: 0.19rem;
+}
+.section .banner .r .list .list-star .star2 {
+  display: block;
+  width: 0.19rem;
+  height: auto;
+  background: none;
+  background: url(../img/shop_list/star2.png) no-repeat;
+  background-size: 0.19rem;
+}
+.section .banner .r .list .list-num {
+  font-size: 0.22rem;
+  color: #ffb82e;
+}
+.section .main {
+  width: 100%;
+  height: 1.38rem;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-top: 0.2rem;
+}
+.section .main .pic {
+  margin: auto 0.1rem auto 0.18rem;
+}
+.section .main .pic img {
+  width: 0.64rem;
+  height: auto;
+  background: none;
+}
+.section .main .user {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.section .main .user .name {
+  font-size: 0.24rem;
+}
+.section .main .user .user_star {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: auto;
+  height: 0.19rem;
+  background: none;
+  margin: 0.12rem auto;
+}
+.section .main .user .user_star .star1 {
+  display: block;
+  width: 0.19rem;
+  height: auto;
+  background: none;
+  margin-right: 0.04rem;
+  background: url(../img/shop_list/star1.png) no-repeat;
+  background-size: 0.19rem;
+}
+.section .main .user .user_star .star2 {
+  display: block;
+  width: 0.19rem;
+  height: auto;
+  background: none;
+  background: url(../img/shop_list/star2.png) no-repeat;
+  background-size: 0.19rem;
+}
+.section .main .year {
+  color: #999999;
+  transform: scale(0.83333333);
+}

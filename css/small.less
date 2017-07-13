@@ -1,0 +1,447 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.container,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.box(@ver: horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+//这是请选择所在城市的页面
+.a_container {
+    .box(vertical);
+    header {
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span {
+            img {
+                .full(0.32rem,auto,none);
+                display: block;
+                margin-left: 0.3rem;
+            }
+        }
+        h1 {
+            -webkit-box-flex: 1;
+            font-size: 0.32rem;
+            text-align: center;
+            color: #feffff;
+            font-weight: normal;
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        background: #f3f3f5;
+        .box(vertical);
+                position: relative;
+        
+        input {
+            .full(580px/640px*100%,0.62rem,none);
+            display: block;
+            margin-left: 0.3rem;
+            margin-top: 0.12rem;
+            font-size: 0.24rem;
+            border: none;
+            border-radius: 0.07rem;
+            outline: none;
+            color: #b6b6b6;
+            background: #ffffff url("../img/search.gif") no-repeat 0.12rem center;
+            background-size: 0.29rem;
+            padding-left: 0.46rem;
+            box-sizing: border-box;
+        }
+        .bottom {
+            -webkit-box-flex: 1;
+            .box;
+            margin-top: 0.14rem;
+            .dw{
+                .full(0.82rem,auto,none);
+                background: url(../img/radio-2.png) no-repeat;
+                background-size: 0.82rem;
+                font-size: 0.3rem;
+                text-align: center;
+                line-height: 0.76rem;
+                color: #ffffff;
+                position: absolute;
+                left: 2.75rem;
+                top: 3.98rem;
+//              -webkit-box-align: center;
+            }
+            .left {
+                -webkit-box-flex: 1;
+                .box(vertical);
+                .dq {
+                    .full(100%,1.24rem,#ffffff);
+                    p {
+                        font-size: 0.24rem;
+                        margin-top: 0.26rem;
+                        margin-left: 0.3rem;
+                        background: url("../img/dw.gif") no-repeat left center;
+                        background-size: 0.22rem;
+                        padding-left: 0.3rem;
+                        a {
+                            color: #a0a0a0;
+                        }
+                    }
+                    h2 {
+                        font-size: 0.26rem;
+                        margin-top: 0.18rem;
+                        margin-left: 0.6rem;
+                        font-weight: normal;
+                        a {
+                            color: #4095f0;
+                        }
+                    }
+                }
+                .e {
+                    .box(vertical);
+                    .full(100%,4.4rem,#ffffff);
+                    p {
+                        .full(100%,0.48rem,#f3f3f5);
+                        //                     -webkit-box-align: center;
+                        font-size: 0.22rem;
+                        color: #333333;
+                        padding-top: 0.12rem;
+                        padding-left: 0.3rem;
+                    }
+                    ul {
+                        .box(vertical);
+                        -webkit-box-flex: 1;
+                        li {
+                            -webkit-box-flex: 1;
+                            font-size: 0.26rem;
+                            margin-top: 0.35rem;
+                            margin-left: 0.3rem;
+                            width: 5.35rem;
+                            border-bottom: 1px solid #e5e9ec;
+                        }
+                        li:first-child {
+                            a {
+                                color: #80b1f3;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .right {
+                .full(0.54rem,auto,#ffffff);
+                ul {
+                    .box(vertical);
+                    margin-top: 1.52rem;
+                    -webkit-box-align: center;
+                    li {
+                        -webkit-box-flex: 1;
+                        font-size: 0.18rem;
+                        a {
+                            color: #4093ef;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//这是选择支付方式的页面
+.b_container {
+    .box(vertical);
+    .header {
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span {
+            img {
+                .full(0.34rem,auto,none);
+                display: block;
+                margin-left: 0.3rem;
+            }
+        }
+        h1 {
+            -webkit-box-flex: 1;
+            font-size: 0.32rem;
+            text-align: center;
+            color: #feffff;
+            font-weight: normal;
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+//      background: #f2f5f7;
+overflow: auto;
+        .nav {
+            .full(100%,1rem,#ffffff);
+            .box;
+            -webkit-box-align: center;
+            span {
+                img {
+                    .full(0.42rem,auto,none);
+                    margin-left: 0.3rem;
+                }
+            }
+            h2 {
+                -webkit-box-flex: 1;
+                font-size: 0.3rem;
+                font-weight: normal;
+                margin-left: 0.2rem;
+            }
+            b {
+                .full(0.43rem,auto,none);
+                font-size: 0.36rem;
+                font-weight: normal;
+                color: #4b92ea;
+                margin-right: 0.3rem;
+                a {
+                    color: #4b92ea;
+                    font-size: 0.2rem;
+                }
+            }
+        }
+        //nav
+        .h {
+            .full(100%,0.75rem,#f3f4f8);
+            border-top: 1px solid #dbdcde;
+            border-bottom: 1px solid #dbdcde;
+            
+            h3 {
+
+                font-size: 0.25rem;
+                color: #b8b9bb;
+                margin-top: 0.25rem;
+                margin-left: 0.3rem;
+
+            }
+        }
+        //h
+        .ul {
+            ul {
+                .full(100%,0.9rem,#ffffff);
+                border-bottom: 1px solid #dcdcdc;
+                .box;
+                -webkit-box-align: center;
+                .one,.two,.three {
+                    .full(0.38rem,0.38rem,none);
+                    background: url("../img/checked-mark.png") no-repeat 0 -0.38rem;
+                    background-size: 0.38rem;
+                    margin-left: 0.3rem;
+                }
+                .one:hover,one.active,.two:hover,two.active,.three:hover,three.active {
+                    background-position: 0 0;
+                }
+                .img {
+                    margin-left: 0.26rem;
+                    img{
+                         display: block;
+                    .full(0.38rem,auto,none);
+                    background-size: 0.34rem;
+                    }
+                   
+                }
+                .qb {
+                    -webkit-box-flex: 1;
+
+                    a {
+
+                        color: #6b6b6b;
+                        font-size: 0.28rem;
+                        margin-left: 0.28rem;
+                    }
+                }
+                .last {
+                    font-size: 0.26rem;
+                    margin-right: 0.3rem;
+                    a {
+                        color: #ff0050;
+                    }
+                }
+            }
+        }
+        //ul
+        .qr{
+            -webkit-box-flex: 1;
+            input{
+                 .full(582px/640px*100%,0.8rem,#4194f0);
+            margin-left: 0.3rem;
+            margin-top: 443px/640px*100%;
+            border-radius: 0.14rem;
+            font-size: 0.3rem;
+            color: #ffffff;
+            }
+        }//qr
+    }
+}//b_container
+//这是请选择所在学校的页面
+.s_container{
+    .box(vertical);
+    .s_header {
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span {
+            img {
+                .full(0.32rem,auto,none);
+                display: block;
+                margin-left: 0.3rem;
+            }
+        }
+        h1 {
+            -webkit-box-flex: 1;
+            font-size: 0.32rem;
+            text-align: center;
+            color: #feffff;
+            font-weight: normal;
+        }
+    }
+    .s_section{
+        -webkit-box-flex: 1;
+         background: #f3f3f5;
+        .box(vertical);
+        .top{
+            .box;
+            .full(100%,0.88rem,#f3f2f5);
+            -webkit-box-align: center;
+           .input {
+            -webkit-box-flex: 1;
+            .full(4.8rem,auto,none);
+            display: block;
+            line-height: 0.62rem;
+            margin: 0 0.17rem 0 0.3rem;
+            font-size: 0.26rem;
+            border: none;
+            border-radius: 0.09rem;
+            outline: none;
+            color: #b6b6b6;
+            background: #ffffff url("../img/search.gif") no-repeat 0.12rem center;
+            background-size: 0.29rem;
+            padding-left: 0.46rem;
+            box-sizing: border-box;
+        }//input
+        .input1{
+            .full(0.84rem,auto,#eaeaea);
+            line-height: 0.58rem;
+            outline: none;
+            border: 1px solid #d9d9d9;
+            margin-right: 0.3rem;
+            font-size: 0.24rem;
+            color: #333333;
+        } 
+        }
+         
+        .bottom{
+            -webkit-box-flex: 1;
+            margin-top: 0.14rem;
+            background: #fff;
+            ul{
+                .full(100%,6.77rem,none);
+                .box(vertical);
+                li{
+                -webkit-box-flex: 1; 
+                border-bottom: 1px solid #e6e9eb;
+                   .box;
+                   -webkit-box-align: center;
+                   margin:0 0.28rem;
+                   a{
+                      -webkit-box-flex: 1; 
+                      display: block;
+                      font-size: 0.28rem;
+                   }
+                   span{
+                       img{
+                           .full(0.34rem,auto,none);
+                       }
+                   }
+                }
+                li:first-child{
+                    a{
+                     color: #4194f0;   
+                    }
+                }
+            }
+        }
+    }
+}//c_container
+//这是搜索学校的页面
+.container{
+    .box(vertical);
+    header{
+         .full(100%,0.96rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span {
+            img {
+                .full(0.38rem,auto,none);
+                display: block;
+                margin-left: 0.3rem;
+            }
+        }
+        h1 {
+            -webkit-box-flex: 1;
+            font-size: 0.32rem;
+            text-align: center;
+            color: #feffff;
+            font-weight: normal;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        .box(vertical);
+        background: #f3f2f5;
+        .top{
+            .box;
+            .full(100%,0.88rem,none);
+            -webkit-box-align: center;
+        .input {
+            -webkit-box-flex: 1;
+            .full(4.8rem,auto,none);
+            display: block;
+            line-height: 0.62rem;
+            margin: 0 0.17rem 0 0.3rem;
+            font-size: 0.26rem;
+            border: none;
+            border-radius: 0.09rem;
+            outline: none;
+            color: #b6b6b6;
+            background: #ffffff url("../img/search.gif") no-repeat 0.12rem center;
+            background-size: 0.29rem;
+            padding-left: 0.46rem;
+            box-sizing: border-box;
+        }//input
+        .input1{
+            .full(0.84rem,auto,#eaeaea);
+            line-height: 0.58rem;
+            outline: none;
+            border: 1px solid #d9d9d9;
+            margin-right: 0.3rem;
+            font-size: 0.24rem;
+            color: #333333;
+        }
+        }
+        .bottom{
+            -webkit-box-flex: 1;
+            background: #fff;
+            dl{
+                .full(100%,2.24rem,none);
+                margin-top: 2.26rem;
+                text-align: center;
+                dt{
+                    img{
+                        .full(1.34rem,auto,none);
+                    }
+                }
+                dd{
+                    margin-top: 0.3rem;
+                    font-size: 0.28rem;
+                    color: #999999;
+                }
+            }
+        }
+        
+    }
+}

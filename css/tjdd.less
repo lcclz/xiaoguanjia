@@ -1,0 +1,252 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.container,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.box(@ver: horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.container{
+ .box(vertical);   
+
+.header{
+    .full(100%,0.94rem,#4194f0);
+    .box;
+    -webkit-box-align: center;
+    text-align: center;
+    span{
+        margin-left: 0.3rem;
+        img{
+            .full(0.38rem,auto,none);
+        }
+    }//span
+    .h1{
+        -webkit-box-flex: 1;
+        font-size: 0.32rem;
+            color: #ffffff;
+    }//h1
+}//header
+.section{
+    -webkit-box-flex: 1;
+    background: #f2f5f7;
+    .box(vertical);
+    position: relative;
+    .address{
+        .full(100%,1.36rem,#fff);
+        border: 1px solid #e6e9eb;
+        border-left:none ;
+        border-right:none ;
+        margin-top: 0.14rem;
+        .box(vertical);
+        .user{
+           margin:0.27rem auto 0.16rem 0.2rem; 
+        }//user
+        .add{
+            .box;
+            margin-left: 0.2rem;
+            .dw{
+                color: #333333;
+                img{
+                    .full(0.22rem,auto,none);
+                }
+            }//dw
+            .zz{
+              -webkit-box-flex: 1;
+              
+line-height: 0.24rem;
+              margin-left: 0.06rem;
+                color: #333333;
+              
+            }//zz
+            .more{
+                margin: -0.2rem 0.2rem auto 0.28rem;
+
+                 img{
+                    .full(0.16rem,auto,none);
+                }
+            }//more
+        }//add
+        .bg{        
+            .box;
+            margin-top: -0.2rem;
+            li{
+              img{
+                  .full(auto,0.04rem,none);
+              }  
+            }
+        
+    }//bg
+    }//address
+    
+    .xxaddress{
+        .full(100%,0.74rem,#ffffff);
+        margin-top: 0.2rem;
+        border-bottom: 1px solid #e6e9eb;
+        border-top: 1px solid #e6e9eb;
+        -webkit-box-align: center;
+        .box;
+        .bz{
+            font-size: 0.24rem;
+            color: #333333;
+            margin: auto 0.6rem auto 0.2rem;
+        }//bz
+        .xxadd{
+            -webkit-box-flex: 1;
+            white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;  
+              color: #aaaaaa;
+        }//xxadd
+        .p_pic{
+            margin: auto 0.2rem auto 0.12rem;
+            img{
+                    .full(0.16rem,auto,none);
+                
+            }
+        }//p_pic
+    }//xxaddress
+    .ddxx{
+        .full(100%,0.77rem,none);
+        line-height: 0.77rem;
+        border-bottom: 1px solid #e6e9eb;
+        margin-top: 0.15rem;
+        padding-left: 0.36rem;
+        padding-right: 0.52rem;
+        color: #333333;
+        background: #fff url(../img/shop_list/cion_jiudian_shu.png) no-repeat 0.18rem center;
+        background-size: 0.07rem;
+        box-sizing: border-box;
+         white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;  
+    }//ddxx
+    .main{
+        .full(100%,1.16rem,#fff);
+        border-bottom: 1px solid #e6e9eb;
+        .box;
+        -webkit-box-align: center;
+        .m_pic{
+            margin: auto 0.18rem;
+            img{
+                .full(0.9rem,auto,none);
+            }
+        }//m_pic
+        .m_list{
+            -webkit-box-flex: 1;
+            .box;
+            .m_txt{
+                font-size: 0.25rem;
+                width: 2.76rem;
+                a{
+                    color: #959595;
+                }
+            }//m_txt
+            .m_num{
+                margin-left: 1rem;
+                color: #c8c8c8;
+                text-decoration: line-through;
+            }//m_num
+            .m_price{
+                margin-left:0.26rem;
+                color: #8a8a8a;
+            }//m_price
+       }//m_list
+    }//main
+    .price{
+        border-bottom: 1px solid #e6e9eb;
+        .p_list{
+            .box;
+             .full(100%,0.8rem,#fff);
+            margin-left: 0.22rem;
+            -webkit-box-align: center;
+            .l_yj{
+                margin-right: 0.28rem;
+            color: #737373;
+            }//l_yj
+            .l_y{
+                -webkit-box-flex: 1;
+                color: #737373;
+                
+            }
+            .l_dzf{
+                .box;
+                margin-right: 0.2rem;
+                span{
+                    color: #ff5a64;
+                    display: block;
+                    margin: auto 0.12rem;
+                }
+            }//l_dzf
+        }
+    }//price
+    
+    
+    
+    
+    
+    
+    
+}//section
+.footer{
+    .full(100%,0.88rem,#454647);
+    .box;
+    -webkit-box-align: center;
+    .f_dzf{
+        -webkit-box-flex: 1;
+        font-size: 0.28rem;
+        margin-left: 0.2rem;
+        a{
+            color: #ffffff;
+    }
+}//f_dzf
+.qdzg{
+    .full(2.3rem,auto,#ff8c50);
+     font-size: 0.28rem;
+     line-height: 0.88rem;
+     text-align: center;
+     a{
+            color: #ffffff;
+    }
+}//qdzg
+}//footer
+
+
+.zhezhao{
+    .full(100%,100%,rgba(127,127,127,.4));
+        position: absolute;
+        left: 0;
+        top: 0;
+        .in{
+            .full(510px/640px*100%,2.92rem,#fff);
+            margin: 50% 0.64rem;
+            display: block;
+            .box(vertical);
+            -webkit-box-align: center;
+            .zhezhao_txt{
+                font-size: 0.3rem;
+                color: #333333;
+                margin: 0.6rem 0.3rem;
+            }//zhezhao_txt
+            .zhezhao_qr{
+                display: block;
+                .full(4.48rem,auto,#4194f0);
+                border: none;
+                outline: none;
+                line-height: 0.78rem;
+                margin-bottom:0.32rem ;
+                border-radius: 0.07rem;
+            }//zhezhao_qr
+            
+        }//in
+        
+}//zhezhao
+}

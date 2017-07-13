@@ -1,0 +1,268 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container .header {
+  width: 100%;
+  height: 0.94rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.container .header span {
+  margin-left: 0.3rem;
+}
+.container .header span img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+}
+.container .header .h1 {
+  -webkit-box-flex: 1;
+  font-size: 0.32rem;
+  color: #ffffff;
+}
+.container .section {
+  -webkit-box-flex: 1;
+  background: #f2f5f7;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+.container .section .address {
+  width: 100%;
+  height: 1.36rem;
+  background: #ffffff;
+  border: 1px solid #e6e9eb;
+  border-left: none ;
+  border-right: none ;
+  margin-top: 0.14rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container .section .address .user {
+  margin: 0.27rem auto 0.16rem 0.2rem;
+}
+.container .section .address .add {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-left: 0.2rem;
+}
+.container .section .address .add .dw {
+  color: #333333;
+}
+.container .section .address .add .dw img {
+  width: 0.22rem;
+  height: auto;
+  background: none;
+}
+.container .section .address .add .zz {
+  -webkit-box-flex: 1;
+  line-height: 0.24rem;
+  margin-left: 0.06rem;
+  color: #333333;
+}
+.container .section .address .add .more {
+  margin: -0.2rem 0.2rem auto 0.28rem;
+}
+.container .section .address .add .more img {
+  width: 0.16rem;
+  height: auto;
+  background: none;
+}
+.container .section .address .bg {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: -0.2rem;
+}
+.container .section .address .bg li img {
+  width: auto;
+  height: 0.04rem;
+  background: none;
+}
+.container .section .xxaddress {
+  width: 100%;
+  height: 0.74rem;
+  background: #ffffff;
+  margin-top: 0.2rem;
+  border-bottom: 1px solid #e6e9eb;
+  border-top: 1px solid #e6e9eb;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .section .xxaddress .bz {
+  font-size: 0.24rem;
+  color: #333333;
+  margin: auto 0.6rem auto 0.2rem;
+}
+.container .section .xxaddress .xxadd {
+  -webkit-box-flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #aaaaaa;
+}
+.container .section .xxaddress .p_pic {
+  margin: auto 0.2rem auto 0.12rem;
+}
+.container .section .xxaddress .p_pic img {
+  width: 0.16rem;
+  height: auto;
+  background: none;
+}
+.container .section .ddxx {
+  width: 100%;
+  height: 0.77rem;
+  background: none;
+  line-height: 0.77rem;
+  border-bottom: 1px solid #e6e9eb;
+  margin-top: 0.15rem;
+  padding-left: 0.36rem;
+  padding-right: 0.52rem;
+  color: #333333;
+  background: #ffffff url(../img/shop_list/cion_jiudian_shu.png) no-repeat 0.18rem center;
+  background-size: 0.07rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .section .main {
+  width: 100%;
+  height: 1.16rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e9eb;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container .section .main .m_pic {
+  margin: auto 0.18rem;
+}
+.container .section .main .m_pic img {
+  width: 0.9rem;
+  height: auto;
+  background: none;
+}
+.container .section .main .m_list {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .section .main .m_list .m_txt {
+  font-size: 0.25rem;
+  width: 2.76rem;
+}
+.container .section .main .m_list .m_txt a {
+  color: #959595;
+}
+.container .section .main .m_list .m_num {
+  margin-left: 1rem;
+  color: #c8c8c8;
+  text-decoration: line-through;
+}
+.container .section .main .m_list .m_price {
+  margin-left: 0.26rem;
+  color: #8a8a8a;
+}
+.container .section .price {
+  border-bottom: 1px solid #e6e9eb;
+}
+.container .section .price .p_list {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.8rem;
+  background: #ffffff;
+  margin-left: 0.22rem;
+  -webkit-box-align: center;
+}
+.container .section .price .p_list .l_yj {
+  margin-right: 0.28rem;
+  color: #737373;
+}
+.container .section .price .p_list .l_y {
+  -webkit-box-flex: 1;
+  color: #737373;
+}
+.container .section .price .p_list .l_dzf {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-right: 0.2rem;
+}
+.container .section .price .p_list .l_dzf span {
+  color: #ff5a64;
+  display: block;
+  margin: auto 0.12rem;
+}
+.container .footer {
+  width: 100%;
+  height: 0.88rem;
+  background: #454647;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container .footer .f_dzf {
+  -webkit-box-flex: 1;
+  font-size: 0.28rem;
+  margin-left: 0.2rem;
+}
+.container .footer .f_dzf a {
+  color: #ffffff;
+}
+.container .footer .qdzg {
+  width: 2.3rem;
+  height: auto;
+  background: #ff8c50;
+  font-size: 0.28rem;
+  line-height: 0.88rem;
+  text-align: center;
+}
+.container .footer .qdzg a {
+  color: #ffffff;
+}
+.container .zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(127, 127, 127, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container .zhezhao .in {
+  width: 79.6875%;
+  height: 2.92rem;
+  background: #ffffff;
+  margin: 50% 0.64rem;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+}
+.container .zhezhao .in .zhezhao_txt {
+  font-size: 0.3rem;
+  color: #333333;
+  margin: 0.6rem 0.3rem;
+}
+.container .zhezhao .in .zhezhao_qr {
+  display: block;
+  width: 4.48rem;
+  height: auto;
+  background: #4194f0;
+  border: none;
+  outline: none;
+  line-height: 0.78rem;
+  margin-bottom: 0.32rem ;
+  border-radius: 0.07rem;
+}

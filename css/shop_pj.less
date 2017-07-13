@@ -1,0 +1,233 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.container,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.box(@ver: horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+
+.container {
+    .box(vertical);
+}
+.header {
+    .full(100%,0.92rem,#4194f0);
+    .box;
+    -webkit-box-align: center;
+    span {
+        img {
+            .full(0.38rem,auto,none);
+            display: block;
+            margin-left: 0.28rem;
+        }
+    }
+    h1 {
+        -webkit-box-flex: 1;
+        font-size: 0.32rem;
+        margin-left: 0.4rem;
+        color: #feffff;
+        font-weight: normal;
+    }
+}
+//header
+.section {
+    -webkit-box-flex: 1;
+    -webkit-box-flex: 1;
+    background: #f2f5f7;
+    overflow: auto;
+    .box(vertical);
+    .main::-webkit-scrollbar {
+        width: 0;
+    }
+    .top {
+        .box;
+        .full(100%,1.24rem,#4194f0);
+        .top_pic {
+            margin: auto 0.28rem auto 0.18rem;
+            position: relative;
+            img {
+                .full(1.06rem,auto,none);
+            }
+            .pic_rgba {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        .top_txt {
+            -webkit-box-flex: 1;
+            .top_list {
+                .box;
+                .top_li {
+                    margin-right: 0.22rem;
+                    img {
+                        .full(0.54rem,auto,none);
+                        margin-top: 0.18rem;
+                    }
+                }
+            }
+            .sp {
+                color: #dae7fb;
+            }
+        }
+        .top_star {
+            .full(0.34rem,0.32rem,none);
+            background: url("../img/shop_list/already.png") no-repeat;
+            background-size: 0.32rem;
+            margin-right: 0.18rem;
+        }
+        .top_star2 {
+            background: url("../img/shop_list/ready.png") no-repeat;
+            background-size: 0.32rem;
+            margin-right: 0.18rem;
+        }
+    }
+    //top
+    .nav {
+        .ul {
+            .full(100%,0.66rem,none);
+            .box;
+            text-align: center;
+            -webkit-box-align: center;
+            border-bottom: 1px solid #cccccc;
+            .li {
+                -webkit-box-flex: 1;
+                line-height: 0.64rem;
+                font-size: 0.28rem;
+                a {
+                    color: #333333;
+                }
+            }
+            .li.active,
+            .li:hover {
+                border-bottom: 2px solid #4194f0;
+                a {
+                    color: #4194f0;
+                }
+            }
+        }
+    }
+    //nav
+    .banner {
+        .box(vertical);
+        .full(100%,1.32rem,#fff);
+        .box;
+        margin-bottom: 0.2rem;
+        .l{
+          .box(vertical);
+          text-align: center;
+          border-right: 1px solid #e6e9eb;
+         .full(2.38rem,auto,none);
+         margin: 0.1rem 0;
+          
+          .l_fen{
+              font-size: 0.28rem;
+              a{
+                  color: #ffbd44;
+              }
+          }  //l_fen
+          .l_per{
+               transform: scale(10/12);
+               transform-origin: center top;
+              a{
+                  color: #666666;
+              }
+          }//l_per
+          .l_num{
+               transform: scale(10/12);
+               transform-origin: center top;
+              a{
+                  color: #b6b6b6;
+              }
+          }
+        }//l
+        .r{
+           -webkit-box-flex: 1; 
+           .box(vertical);
+           margin-left: ;
+         margin-left: 0.62rem ; 
+           .list{
+               .box;
+               margin-top: 0.2rem;
+               .list-txt{
+                   font-size: 0.22rem;
+                   color: #333333;
+               }//list-txt
+               .list-star{
+                   .box;
+                   margin:0.08rem 0.07rem auto 0.16rem ;
+                   .star1{
+                       display: block;
+                       .full(0.19rem,auto,none);
+                       margin-right: 0.04rem;
+                       background: url(../img/shop_list/star1.png) no-repeat;
+                       background-size: 0.19rem;
+                   }//star1
+                   .star2{
+                        display: block;
+                       .full(0.19rem,auto,none);
+                       background: url(../img/shop_list/star2.png) no-repeat;
+                       background-size: 0.19rem;
+                   }//star2
+               }//list-star
+               .list-num{
+                   font-size: 0.22rem;
+                   color: #ffb82e;
+               }//list-num
+           }//list
+        }//r
+        }
+    //banner
+   
+    .main{
+        .full(100%,1.38rem,#fff);
+        border-bottom: 1px solid #eeeeee;
+        .box;
+       padding-top: 0.2rem;
+        .pic{
+            margin: auto 0.1rem auto 0.18rem;
+            img{
+                .full(0.64rem,auto,none);
+            }
+        }//pic
+        .user{
+            -webkit-box-flex: 1;
+            .box(vertical);
+            .name{
+                font-size: 0.24rem;
+            }//name
+            .user_star{
+                .box;
+                .full(auto,0.19rem,none);
+                margin: 0.12rem auto;
+                   .star1{
+                       display: block;
+                       .full(0.19rem,auto,none);
+                       margin-right: 0.04rem;
+                       background: url(../img/shop_list/star1.png) no-repeat;
+                       background-size: 0.19rem;
+                   }//star1
+                   .star2{
+                        display: block;
+                       .full(0.19rem,auto,none);
+                       background: url(../img/shop_list/star2.png) no-repeat;
+                       background-size: 0.19rem;
+                   }//star2
+            }//star
+        }//user
+        .year{
+            color: #999999;
+            transform: scale(10/12);
+        }//year
+    }//main
+}
+//section

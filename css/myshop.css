@@ -1,0 +1,166 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+.container .header {
+  width: 100%;
+  height: 0.92rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container .header span img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+  display: block;
+  margin-left: 0.28rem;
+}
+.container .header h1 {
+  -webkit-box-flex: 1;
+  font-size: 0.32rem;
+  text-align: center;
+  color: #feffff;
+  font-weight: normal;
+}
+.container .section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  background: #f2f5f7;
+  overflow: auto;
+}
+.container .section .nav .ul {
+  width: 100%;
+  height: 0.66rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  -webkit-box-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+.container .section .nav .ul .li {
+  -webkit-box-flex: 1;
+  line-height: 0.64rem;
+  font-size: 0.28rem;
+}
+.container .section .nav .ul .li a {
+  color: #333333;
+}
+.container .section .nav .ul .li.active,
+.container .section .nav .ul .li:hover {
+  border-bottom: 2px solid #4194f0;
+}
+.container .section .nav .ul .li.active a,
+.container .section .nav .ul .li:hover a {
+  color: #4194f0;
+}
+.container .section .main {
+  width: auto;
+  height: 2.9rem;
+  background: none;
+  margin: 0.22rem 0.18rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  background: #ffffff url(../img/shop_list/myxian.png) no-repeat left center;
+  background-size: 0.1rem ;
+}
+.container .section .main .top {
+  width: auto;
+  height: 0.67rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  color: #959595;
+}
+.container .section .main .top .t_txt {
+  margin-left: 0.22rem;
+}
+.container .section .main .top .t_num {
+  margin-left: 0.15rem;
+  -webkit-box-flex: 1;
+}
+.container .section .main .top .t_state {
+  margin-right: 0.18rem;
+}
+.container .section .main .center {
+  width: auto;
+  height: 1.44rem;
+  background: #f9f9f9;
+  border: 1px solid #e6e9eb;
+  margin-left: 0.1rem;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .section .main .center .l {
+  -webkit-box-flex: 1;
+}
+.container .section .main .center .l .l_list {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container .section .main .center .l .l_list .l_one {
+  background: url(../img/shop_list/cion_oreder_xiyidian.png) no-repeat 0.2rem center;
+  background-size: 0.26rem;
+  padding-left: 0.52rem;
+  color: #333333;
+  font-size: 0.28rem;
+  font-weight: bold;
+}
+.container .section .main .center .l .l_list .l_two {
+  background: url(../img/shop_list/myshop2.png) no-repeat 0.52rem center;
+  background-size: 0.27rem;
+  padding-left: 0.84rem;
+  color: #333333;
+}
+.container .section .main .center .l .l_list .l_two span {
+  color: #62a3f1;
+  margin-left: 0.16rem;
+}
+.container .section .main .center .l .l_list .l_three {
+  background: url(../img/shop_list/time.png) no-repeat 0.52rem center;
+  background-size: 0.27rem;
+  padding-left: 0.84rem;
+  color: #333333;
+}
+.container .section .main .center .r {
+  margin-right: 0.18rem;
+}
+.container .section .main .center .r img {
+  width: 0.15rem;
+  height: auto;
+  background: none;
+}
+.container .section .main .bottom {
+  width: auto;
+  height: 0.74rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container .section .main .bottom .none {
+  -webkit-box-flex: 1;
+}
+.container .section .main .bottom input {
+  display: block;
+  border: 1px solid #666666;
+  outline: none;
+  border-radius: 0.04rem;
+  width: 1.34rem;
+  height: auto;
+  background: none;
+  margin-right: 0.2rem;
+}

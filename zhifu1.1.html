@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>选择支付方式</title>
+		 <script type="text/javascript">
+  (function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   	
+    </script>
+		<link rel="stylesheet" type="text/css" href="css/small.css" />
+	</head>
+
+	<body>
+		<div class="b_container">
+			<header class="header">
+				<span><a href="tidd4_1.html"><img src="img/nav_btn_back.png"/></a></span>
+				<h1>选择支付方式</h1>
+			</header>
+			<section>
+				<div class="nav">
+					<span><img src="img/icon_jine.png"/></span>
+					<h2>订单金额</h1>
+				<b><a href="#">¥</a>7</b>	
+			</div>
+			<div class="h">
+				<h3>选择支付方式</h3>
+			</div>
+			<div class="ul">
+				<ul>
+					<li class="list one active" ></li>
+					<li class="img"><img src="img/qb.png"/></li>
+					<li class="qb">
+						<a href="#">钱包</a>
+					</li>
+					<li class="last"><a href="#">余额:120.50元</a></li>
+				</ul>
+			</div>
+			<div class="ul">
+				<ul>
+					<li class="list two"></li>
+					<li class="img"><img src="img/wx.png"/></li>
+					<li class="qb">
+						<a href="#">微信</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="ul">
+				<ul>
+					<li class="list three"></li>
+					<li class="img"><img src="img/zf.png"/></li>
+					<li class="qb">
+						<a href="#">支付宝</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="qr">
+				<input type="submit" value="确认付款" />
+			</div>
+		</section>
+		<script src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(".list").click(function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+</script>
+	</div>
+	</body>
+</html>

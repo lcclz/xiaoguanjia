@@ -1,0 +1,160 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.container,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.box(@ver: horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.container {
+    .box(vertical);
+    position: relative;
+
+    .header {
+        .full(100%,0.92rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span {
+            img {
+                .full(0.38rem,auto,none);
+                display: block;
+                margin-left: 0.28rem;
+            }
+        }
+        h1 {
+            -webkit-box-flex: 1;
+            font-size: 0.32rem;
+            text-align: center;
+            color: #feffff;
+            font-weight: normal;
+        }
+    }
+    .section{
+        -webkit-box-flex: 1;
+        .box(vertical);
+        background: #f2f5f7;
+        overflow: auto;
+        .nav {
+            .ul {
+                .full(100%,0.66rem,none);
+                .box;
+                text-align: center;
+                -webkit-box-align: center;
+                border-bottom: 1px solid #cccccc;
+                .li {
+                    -webkit-box-flex: 1;
+                    line-height: 0.64rem;
+                    font-size: 0.28rem;
+                    a {
+                        color: #333333;
+                    }
+                }
+                .li.active,
+                .li:hover {
+                    border-bottom: 2px solid #4194f0;
+
+                    a {
+                        color: #4194f0;
+                    }
+                }
+            }
+        }
+        //nav
+        
+        .main{
+            .full(auto,2.9rem,none);
+            margin: 0.22rem 0.18rem;
+            .box(vertical);
+            background:#fff url(../img/shop_list/myxian.png) no-repeat left center;
+            background-size:0.1rem ;
+            .top{
+                .full(auto,0.67rem,none);
+                .box;
+                -webkit-box-align: center;
+                color: #959595;
+                .t_txt{
+                    margin-left: 0.22rem;
+                }
+                .t_num{
+                    margin-left: 0.15rem;
+                    -webkit-box-flex: 1;
+                }
+                .t_state{
+                    margin-right: 0.18rem;
+                }
+            }//top
+            .center{
+                .full(auto,1.44rem,#f9f9f9);
+                border: 1px solid #e6e9eb;
+                margin-left: 0.1rem;
+                -webkit-box-align: center;
+                .box;
+                .l{
+                    -webkit-box-flex: 1;
+                    .l_list{
+                        .box(vertical);
+                        .l_one{
+                            background: url(../img/shop_list/cion_oreder_xiyidian.png) no-repeat 0.2rem center;
+                            background-size: 0.26rem;
+                            padding-left: 0.52rem;
+                            color: #333333;
+                            font-size: 0.28rem;
+                            font-weight: bold;
+                        }
+                        .l_two{
+                            background: url(../img/shop_list/myshop2.png) no-repeat 0.52rem center;
+                            background-size: 0.27rem;
+                            padding-left: 0.84rem;
+                            color: #333333;
+                            span{
+                                color: #62a3f1;
+                                margin-left: 0.16rem;
+                            }
+                            
+                        }
+                        .l_three{
+                            background: url(../img/shop_list/time.png) no-repeat 0.52rem center;
+                            background-size: 0.27rem;
+                            padding-left: 0.84rem;
+                            color: #333333;
+                            
+                        }
+                    }
+                }
+                .r{
+                    margin-right: 0.18rem;
+                    img{
+                        .full(0.15rem,auto,none);
+                    }
+                }
+            }//center
+            .bottom{
+                .full(auto,0.74rem,none);
+                .box;
+                -webkit-box-align: center;
+                .none{
+                    -webkit-box-flex: 1;
+                }
+                input{
+                    display: block;
+                    border: 1px solid #666666;
+                    outline: none;
+                    border-radius: 0.04rem;
+                    .full(1.34rem,auto,none);
+                    margin-right: 0.2rem;
+                    
+                }
+            }//bottom
+        }//main
+    }
+    
+}

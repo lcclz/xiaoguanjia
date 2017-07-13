@@ -1,0 +1,164 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.container,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+@color: #4194f0;
+
+.box(@ver: horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.container {
+    .box(vertical);
+    header {
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        p {
+            margin-left: 0.3rem;
+            img {
+                .full(0.4rem,auto,non);
+            }
+        }
+        h1 {
+            -webkit-box-flex: 1;
+            .full(3.04rem,0.5rem,none);
+            .box;
+            -webkit-box-align: center;
+            background: url("../img/r_j.png") no-repeat;
+            background-size: 3.04rem;
+            margin-left: 1.04rem;
+            color: #fff;
+            font-size: 0.34rem;
+            img {
+                display: block;
+                .full(0.28rem,0.32rem,none);
+                margin-left: 0.22rem;
+                margin-right: 0.1rem;
+            }
+        }
+        a {
+            display: block;
+            .box(vertical);
+            margin-right: 0.3rem;
+            //          text-align: center;
+            .img {
+                display: block;
+                .full(0.38rem,0.36rem,none);
+                margin-left: 0.3rem;
+                background: url("../img/myshop.png") no-repeat;
+                background-size: 0.38rem;
+            }
+            .wenzi {
+                display: block;
+                color: #ffffff;
+            }
+        }
+    }
+    footer {
+        .full(100%,0.98rem,none);
+        border-top: 1px solid #e6e9eb;
+        box-shadow: 0 -0.07rem 0.1rem #f0f0f0;
+        .box;
+        .ul {
+            -webkit-box-flex: 1;
+            margin-left: 0.84rem;
+            .li {
+                a {
+                    display: block;
+                    margin-top: 0.08rem;
+                    color: #b9b9b9;
+                }
+                .img1 {
+                    margin-top: 0.18rem;
+                    display: block;
+                    background: url("../img/img1.png") no-repeat;
+                    background-size: 20px 58px;
+                    &.home2 {
+                        height: 18px;
+                        width: 18px;
+                        background-position: 0 0;
+                    }
+                    &.home3 {
+                        height: 20px;
+                        width: 20px;
+                        background-position: 0 -18px;
+                    }
+                    &.Home {
+                        height: 19px;
+                        width: 20px;
+                        background-position: 0 -38px;
+                    }
+                }
+            }
+        }
+        //ul
+        .ul:first-child {
+            .li {
+                a {
+                    color: #81b2f4;
+                }
+            }
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        .box(vertical);
+        background: #ffffff;
+        overflow: auto;
+        .banner {
+            img {
+                .full(100%,2.96rem,none);
+            }
+        }
+        //banner
+        .home {
+            .full(100%,4.07rem,none);
+            margin-top: 0.18rem;
+            .img1 {
+                margin: 0.5rem 1.7rem 0 2rem;
+                display: block;
+                .full(2.7rem,2.4rem,none);
+                background: url("../img/qiu.png") no-repeat;
+                background-size: 2.7rem;
+            }
+            //img1
+            .wz {
+                text-align: center;
+                display: block;
+                width: 3.94rem;
+                margin: 0.32rem 1.24rem 0 1.26rem;
+                font-size: 0.24rem;
+                a {
+                    color: #acacac;
+
+                }
+
+            }
+        }
+        //home
+        .sq {
+            .full(100%,1.39rem,#fff);
+            a {
+                display: block;
+                .full(342px/640*100%,.8rem,none);
+                border: 1px solid #4194f0;
+                color: #4194f0;
+                margin-left: 1.5rem;
+                text-align: center;
+                line-height: 0.8rem;
+                font-size: 0.34rem;
+                border-radius: 0.36rem;
+            }
+        }
+
+    }
+}
