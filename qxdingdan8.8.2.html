@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>取消订单</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<script src="js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/dingdan.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="header">
+				<span><a href="dingdandai8.1.html"><img src="img/nav_btn_back.png" /></a></span>
+				<h1 class="h1">取消订单</h1>
+			</header>
+			<section class="section section2">
+				<div class="why">
+						为什么要取消订单呢?
+				</div>
+				<div class="season">
+					<p class="l">地址填写错误</p>
+					<p class="l">地址填写错误</p>
+					<p class="l">地址填写错误</p>
+					<p class="l">地址填写错误</p>					
+				</div>
+				
+			</section>
+			<footer class="footer footer2">
+				<div class="tj">
+					<a href="#">提交</a>
+				</div>
+			</footer>
+				
+		</div>
+		
+		
+		
+		<script src="js/jquery.js">
+		</script>
+		<script type="text/javascript">
+			$(".li").click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+			$(".list_li").click(function() {
+				$(this).addClass("selected").siblings().removeClass("selected");
+			})
+		</script>
+	</body>
+
+</html>
